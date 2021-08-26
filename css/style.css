@@ -1,0 +1,209 @@
+:root {
+    /* ! Primary */
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    /* main background */
+    --darkDesaturatedBlue: hsl(244, 38%, 16%);
+    /* card background */
+    --softViolet: hsl(277, 64%, 61%);
+    /* accent */
+    /* ! Neutral ----------------------------------- */
+    --white: hsl(0, 0%, 100%);
+    /* main heading, stats */
+    --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+    /* main paragraph */
+    --slightlyTransparentWhiteV2: hsla(0, 0%, 100%, 0.6);
+    /* stat headings */
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-color: var(--veryDarkBlue);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    background-color: var(--darkDesaturatedBlue);
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 850px;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.mainText h1 {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+}
+
+.mainText span {
+    color: var(--softViolet);
+}
+
+.mainText p {
+    color: var(--slightlyTransparentWhite);
+    font-family: "Lexend Deca", sans-serif;
+    margin: 25px 0 0 0;
+    line-height: 25px;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(hsla(277, 100%, 18%, 0.5), hsla(277, 100%, 18%, 0.5)), url(/images/image-header-mobile.jpg);
+}
+
+.secondLine h1 {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+}
+
+.secondLine p {
+    color: var(--slightlyTransparentWhite);
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.secondLine {
+    margin-top: 50px;
+}
+
+.lineItem {
+    padding-bottom: 10px;
+}
+
+.cardContent {
+    padding: 2rem;
+}
+
+.secondLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lineItem {
+    margin: 0 0 30px 0;
+}
+
+.wm {
+    color: var(--white);
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+    font-size: .5rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 900px) {
+    .banner {
+        background-color: var(--veryDarkBlue);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .card {
+        width: 85%;
+        background-color: var(--darkDesaturatedBlue);
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 5px;
+    }
+    .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0;
+        background-image: linear-gradient(hsla(277, 100%, 18%, 0.5), hsla(277, 100%, 18%, 0.5)), url(/images/image-header-desktop.jpg);
+    }
+    .cardContent {
+        text-align: left;
+        margin: 30px 0px 0 30px;
+    }
+    .mainText {}
+    .mainText h1 {
+        color: var(--white);
+        font-family: "Inter", sans-serif;
+        font-size: 2.5rem;
+    }
+    .mainText span {
+        color: var(--softViolet);
+    }
+    .mainText p {
+        color: var(--slightlyTransparentWhite);
+        font-family: "Lexend Deca", sans-serif;
+        margin: 25px 0 0 0;
+        line-height: 35px;
+        padding-right: 9rem;
+    }
+    .secondLine {
+        margin-top: 85px;
+    }
+    .lineItem {
+        padding-bottom: 10px;
+    }
+    .cardContent {
+        padding: 2rem;
+    }
+    .secondLine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+    .lineItem {
+        margin: 0 80px 0 0;
+    }
+    .wm {
+        color: var(--white);
+        font-family: "Lexend Deca", sans-serif;
+        text-transform: uppercase;
+        font-size: .5rem;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
